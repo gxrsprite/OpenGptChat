@@ -25,6 +25,10 @@
     <s:String x:Key="StrLanguage">語言</s:String>
     <s:String x:Key="StrColorMode">色彩模式</s:String>
 
+    <s:String x:Key="NoProxy">無代理</s:String>
+    <s:String x:Key="SystemProxy">繫統代理</s:String>
+    <s:String x:Key="Proxy">代理</s:String>
+
     <!--熱鍵描述-->
     <s:String x:Key="StrHotkeyTips">熱鍵提示</s:String>
     <s:String x:Key="StrCloseApplication">關閉程式</s:String>

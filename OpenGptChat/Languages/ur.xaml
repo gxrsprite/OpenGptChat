@@ -25,6 +25,10 @@
     <s:String x:Key="StrLanguage">زبان</s:String>
     <s:String x:Key="StrColorMode">رنگ موڈ</s:String>
 
+    <s:String x:Key="NoProxy">NoProxy</s:String>
+    <s:String x:Key="SystemProxy">SystemProxy</s:String>
+    <s:String x:Key="Proxy">Proxy</s:String>
+
     <!--ہاٹ کی نکات-->
     <s:String x:Key="StrHotkeyTips">ہاٹ کی ہدایات</s:String>
     <s:String x:Key="StrCloseApplication">برطرف کرنے کے لئے درخواست دیں</s:String>

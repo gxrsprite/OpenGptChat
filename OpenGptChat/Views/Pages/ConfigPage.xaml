@@ -109,6 +109,53 @@
                         </Grid.ColumnDefinitions>
 
                         <TextBlock>
+                            <Run Text="{DynamicResource NoProxy}"/>
+                            <Run Text=":"/>
+                        </TextBlock>
+                        <RadioButton Grid.Column="1" GroupName="proxy" VerticalAlignment="Center" IsChecked="{Binding ConfigurationService.Configuration.NoProxy}"/>
+                    </Grid>
+                </StackPanel>
+                
+                <StackPanel Margin="0 5 0 0">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+
+                        <TextBlock>
+                            <Run Text="{DynamicResource SystemProxy}"/>
+                            <Run Text=":"/>
+                        </TextBlock>
+                        <RadioButton Grid.Column="1" GroupName="proxy" VerticalAlignment="Center" IsChecked="{Binding ConfigurationService.Configuration.SystemProxy}"/>
+                    </Grid>
+                </StackPanel>
+
+                <StackPanel Margin="0 4 0 0">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="70"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="auto"/>
+                        </Grid.ColumnDefinitions>
+
+                        <TextBlock>
+                            <Run Text="{DynamicResource Proxy}"/>
+                            <Run Text=":"/>
+                        </TextBlock>
+                        <TextBox Grid.Column="1" Margin="5 0 5 0" HorizontalAlignment="Left" Width="300" Name="ProxyUrl" Text="{Binding ConfigurationService.Configuration.ProxyUrl}"></TextBox>
+                        <RadioButton Grid.Column="2" GroupName="proxy" VerticalAlignment="Center" IsChecked="{Binding ConfigurationService.Configuration.Proxy}"/>
+                    </Grid>
+                </StackPanel>
+
+                <StackPanel Margin="0 30 0 0">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+
+                        <TextBlock>
                             <Run Text="{DynamicResource StrEnableChatContext}"/>
                             <Run Text=":"/>
                         </TextBlock>

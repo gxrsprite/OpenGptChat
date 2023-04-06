@@ -25,6 +25,10 @@
     <s:String x:Key="StrLanguage">اللغة</s:String>
     <s:String x:Key="StrColorMode">وضع اللون</s:String>
 
+    <s:String x:Key="NoProxy">NoProxy</s:String>
+    <s:String x:Key="SystemProxy">SystemProxy</s:String>
+    <s:String x:Key="Proxy">Proxy</s:String>
+
     <!--وصف مفاتيح الاختصار-->
     <s:String x:Key="StrHotkeyTips">تلميحات مفتاح الاختصار</s:String>
     <s:String x:Key="StrCloseApplication">إغلاق التطبيق</s:String>

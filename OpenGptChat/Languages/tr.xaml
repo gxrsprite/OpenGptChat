@@ -25,6 +25,10 @@
     <s:String x:Key="StrLanguage">Dil</s:String>
     <s:String x:Key="StrColorMode">Renk Modu</s:String>
 
+    <s:String x:Key="NoProxy">NoProxy</s:String>
+    <s:String x:Key="SystemProxy">SystemProxy</s:String>
+    <s:String x:Key="Proxy">Proxy</s:String>
+
     <!--hotkey descriptions-->
     <s:String x:Key="StrHotkeyTips">Kısayol Önerileri</s:String>
     <s:String x:Key="StrCloseApplication">Uygulamayı Kapat</s:String>

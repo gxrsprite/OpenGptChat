@@ -2,12 +2,16 @@
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
+using System.Net.Http.Headers;
+using System.Net.Http;
+using System.Security.Authentication;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using OpenAI;
 using OpenAI.Chat;
 using OpenGptChat.Models;
+using System.Net;
 
 namespace OpenGptChat.Services
 {
@@ -34,13 +38,28 @@ namespace OpenGptChat.Services
             [NotNull] out string client_apikey,
             [NotNull] out string client_apihost)
         {
+            IWebProxy? proxy = null;
+            if (ConfigurationService.Configuration.SystemProxy)
+            {
+                proxy = WebRequest.DefaultWebProxy;
+            }
+            else if (ConfigurationService.Configuration.Proxy)
+            {
+                proxy = new WebProxy(ConfigurationService.Configuration.ProxyUrl);
+            }
+            if (proxy != null)
+            {
+                HttpClient.DefaultProxy = proxy;
+            }
+
             client_apikey = ConfigurationService.Configuration.ApiKey;
             client_apihost = ConfigurationService.Configuration.ApiHost;
-
+            
             client = new OpenAIClient(
                 new OpenAIAuthentication(ConfigurationService.Configuration.ApiKey),
                 new OpenAIClientSettings(ConfigurationService.Configuration.ApiHost));
         }
+
 
         private OpenAIClient GetOpenAIClient()
         {

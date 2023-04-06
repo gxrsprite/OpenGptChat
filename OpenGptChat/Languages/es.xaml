@@ -25,6 +25,10 @@
     <s:String x:Key="StrLanguage">Idioma</s:String>
     <s:String x:Key="StrColorMode">Modo de color</s:String>
 
+    <s:String x:Key="NoProxy">NoProxy</s:String>
+    <s:String x:Key="SystemProxy">SystemProxy</s:String>
+    <s:String x:Key="Proxy">Proxy</s:String>
+
     <!--Descripción de la tecla de acceso rápido-->
     <s:String x:Key="StrHotkeyTips">Consejos de teclas de acceso rápido</s:String>
     <s:String x:Key="StrCloseApplication">Cerrar la aplicación</s:String>

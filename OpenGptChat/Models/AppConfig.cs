@@ -33,6 +33,18 @@ namespace OpenGptChat.Models
         private string _language = string.Empty;
 
         [ObservableProperty]
+        private bool _noProxy = false;
+
+        [ObservableProperty]
+        private bool _systemProxy = true;
+
+        [ObservableProperty]
+        private bool _proxy = false;
+
+        [ObservableProperty]
+        private string _proxyUrl = "http://127.0.0.1:17980";
+
+        [ObservableProperty]
         private ColorMode _colorMode = ColorMode.Auto;
 
         [ObservableProperty]

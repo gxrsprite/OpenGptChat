@@ -25,6 +25,10 @@
     <s:String x:Key="StrLanguage">Язык</s:String>
     <s:String x:Key="StrColorMode">Режим цвета</s:String>
 
+    <s:String x:Key="NoProxy">NoProxy</s:String>
+    <s:String x:Key="SystemProxy">SystemProxy</s:String>
+    <s:String x:Key="Proxy">Proxy</s:String>
+
     <!-- Описание горячих клавиш -->
     <s:String x:Key="StrHotkeyTips">Подсказки по горячим клавишам</s:String>
     <s:String x:Key="StrCloseApplication">Закрыть приложение</s:String>

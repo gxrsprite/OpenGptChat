@@ -25,6 +25,10 @@
     <s:String x:Key="StrLanguage">言語</s:String>
     <s:String x:Key="StrColorMode">カラーモード</s:String>
 
+    <s:String x:Key="NoProxy">NoProxy</s:String>
+    <s:String x:Key="SystemProxy">SystemProxy</s:String>
+    <s:String x:Key="Proxy">Proxy</s:String>
+
     <!--ホットキーの説明-->
     <s:String x:Key="StrHotkeyTips">ホットキーのヒント</s:String>
     <s:String x:Key="StrCloseApplication">アプリを閉じる</s:String>

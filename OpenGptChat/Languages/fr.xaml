@@ -25,6 +25,10 @@
     <s:String x:Key="StrLanguage">Langue</s:String>
     <s:String x:Key="StrColorMode">Mode de couleur</s:String>
 
+    <s:String x:Key="NoProxy">NoProxy</s:String>
+    <s:String x:Key="SystemProxy">SystemProxy</s:String>
+    <s:String x:Key="Proxy">Proxy</s:String>
+
     <!--Description du raccourci clavier-->
     <s:String x:Key="StrHotkeyTips">Conseils de raccourci clavier</s:String>
     <s:String x:Key="StrCloseApplication">Fermer l'application</s:String>
